@@ -4,7 +4,7 @@ Lets say you have multiple files with the same first column and you want to merg
 
 # Usage
 <pre>
-awk -f fileMulti2TableMod1.awk 1.test 2.test 3.test 4.test 5.test 6.test
+awk -f fileMulti2TableMod2.awk 1.test 2.test 3.test 4.test 5.test 6.test
 </pre>
 
 # Example
@@ -54,3 +54,18 @@ DN52ei1f:~ milospjanic$ cat 6.test
 do	456
 now	
 string
+
+DN52ei1f:~ milospjanic$ awk -f fileMulti2TableMod2.awk 1.test 2.test 3.test 4.test 5.test 6.test 
+blab  NA NA NA 5 NA NA
+mondo 3 NA NA NA NA NA
+comeon 45 NA NA NA NA NA
+do 6 4 67 555 456 456
+now 7 4 6 75 567  NA
+blis  NA NA 4499 NA NA NA
+fry  NA NA 456 NA NA NA
+dove  NA NA 67 NA NA NA
+bike 56 NA NA NA NA NA
+work 455 NA NA NA NA NA
+string 5 4 5  NA  NA  NA
+ubas  NA NA 5889 NA NA NA
+test  NA 56 NA NA NA NA
